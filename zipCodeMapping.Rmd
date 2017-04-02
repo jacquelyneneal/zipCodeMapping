@@ -2,14 +2,18 @@
 title: "Zip Code Mapping"
 author: "Jacquelyn Neal"
 date: "April 1, 2017"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(tidy = TRUE)
 ```
 
-## 
+### Zip Codes in USA with Longitudes and Latitudes
+Using data from [Eric Hurst's US zip code dataset](https://gist.github.com/erichurst/7882666), I was looking to plot distances from Nashville to anywhere within the contiguous United States. This is a first attempt at making maps in R.
 
 ```{r packages,message=FALSE,warning=FALSE}
 library(ggplot2)
